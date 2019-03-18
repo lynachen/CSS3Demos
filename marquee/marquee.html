@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ec-css无缝滚动</title>
+    <style>
+        .demo-marquee {
+            width: 600px;
+            margin: 20px auto;
+            overflow: hidden;
+        }
+
+        .demo-marquee ul {
+            width: 1600px;
+            animation: ec-marquee-move 6s infinite linear;
+        }
+
+        .demo-marquee ul:hover {
+            /*animation-play-state: paused;*/
+            -webkit-animation-play-state: paused;
+            -moz-animation-play-state: paused;
+            -o-animation-play-state: paused;
+            animation-play-state: paused;
+        }
+
+        @keyframes ec-marquee-move {
+            0% {
+                transform: translateY(0px);
+            }
+            100% {
+                transform: translateY(100px);
+            }
+        }
+    </style>
+</head>
+<body>
+<div class="demo-marquee">
+    <!--<ul class="fllil">
+        <li><img src="images/1.jpg"/>
+        </li>
+        <li><img src="images/2.jpg"/>
+        </li>
+        <li><img src="images/3.jpg"/>
+        </li>
+        <li><img src="images/4.jpg"/>
+        </li>
+        <li><img src="images/1.jpg"/>
+        </li>
+        <li><img src="images/2.jpg"/>
+        </li>
+        <li><img src="images/3.jpg"/>
+        </li>
+        <li><img src="images/4.jpg"/>
+        </li>
+    </ul>-->
+    <ul>
+    	<li>11111</li>
+    	<li>22222</li>
+    	<li>33333</li>
+    	<li>44444</li>
+    </ul>
+</div>
+</body>
+</html>

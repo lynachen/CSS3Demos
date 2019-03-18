@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>smoke</title>
+</head>
+	<style>
+		body {
+			background-color: #333;
+			color: transparent;
+			/*backface-visibility: hidden;*/
+		}
+		.smoke {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			text-align: center;
+			-webkit-transform: translate(-50%,-50%);
+			-moz-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%,-50%);
+			-o-transform: translate(-50%,-50%);
+			transform: translate(-50%,-50%);
+		}
+		.smoke span {
+			display: inline-block;
+			font-size: 100px;
+			animation: smoky 3s 1s both;
+			text-shadow: 0 0 0 whitesmoke;
+		}
+		@keyframes smoky {
+			60% {
+				text-shadow: 0 0 40px whitesmoke;
+			}
+			to {
+				transform: translate3d(15rem, -8rem, 0) rotate(-40deg) skewX(70deg) scale(1.5);
+                text-shadow: 0 0 20px whitesmoke;
+                opacity: 0;
+			}
+		}
+	</style>
+<body>
+	<div class="smoke">
+		<span>H</span>
+		<span>E</span>
+		<span>L</span>
+		<span>L</span>
+		<span>O</span>
+	</div>
+</body>
+</html>
